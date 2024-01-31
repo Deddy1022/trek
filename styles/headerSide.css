@@ -1,0 +1,24 @@
+@font-face {
+    font-family: PlD;
+    src: url(../fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: PlD;
+    background: rgb(243, 242, 242);
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    height: 100px;
+    padding: 10px;
+    margin-left: 40px;
+}

@@ -1,0 +1,76 @@
+@media(max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .modal {
+        width: 100vw;
+        height: 70%;
+    }
+
+    .navigation .liste {
+        display: none;
+    }
+
+    .navigation .hamburger {
+        display: block;
+    }
+
+    .navigation .dropdown-menu {
+        display: block;
+    }
+}
+
+@media(max-width: 450px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        width: 40%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .middle .redaction, .middle .prix {
+        width: 80%;
+        margin: 20px auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    .main .flex .flex-entry {
+        flex-basis: 30%;
+    }
+
+    #details .carte {
+        height: auto;
+    }
+
+    #details .carte .modalActivate {
+        display: block;
+        margin-left: 10%;
+    }
+
+    #details {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        height: auto;
+    }
+
+    #details .carte .img{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .main .flex .flex-entry {
+        flex-basis: 90%;
+    }
+}
