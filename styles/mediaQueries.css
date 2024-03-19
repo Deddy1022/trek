@@ -1,11 +1,10 @@
-@media(max-width: 750px) {
+@media(max-width: 850px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    .modal {
-        width: 100vw;
-        height: 70%;
+    .section-image {
+        grid-template-columns: 1fr;
     }
 
     .navigation .liste {
@@ -19,15 +18,64 @@
     .navigation .dropdown-menu {
         display: block;
     }
+
+    .bienvenue {
+        width: 100%;
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-@media(max-width: 450px) {
+@media(max-width: 550px) {
     .grid {
         grid-template-columns: 1fr;
     }
 
+    .section-image {
+        background-image: linear-gradient(176deg, orangered 80%, #ffffff calc(80% + 2px));
+    }
+
+    .logo-header {
+        height: 100px;
+    }
+
+    .about--trek {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about--trek .grid-about {
+        border: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 30px;
+    }
+}
+
+@media(max-width: 450px) {
     .navigation {
         width: 40%;
+    }
+
+    .bienvenue {
+       top: 50%;
+       transform: translateY(-50%);
+       text-align: center;
+       width: 300px;
+       left: calc(50% - 150px);
+    }
+    
+    .logo-header {
+        height: 100px;
     }
 }
 

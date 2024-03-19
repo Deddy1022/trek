@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x_icon" href="../images/icon_sud.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Baobab à l'île des pirates</title>
+	<link rel="stylesheet" href="../styles/main.css">
+	<link rel="stylesheet" href="../styles/side.css">
+	<link rel="stylesheet" href="../styles/header.css">
+	<link rel="stylesheet" type="text/css" href="../styles/icon.scss">
+	<link rel="stylesheet" href="../styles/mediaQueries.css">
+	<link rel="stylesheet" href="../fontawesome/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script src="../js/lang.js" defer></script>
+	<header>
+    <div id="logo">
+      <img src="../images/logo.png" alt="Logo Sudmadatrek">
+    </div>
+    <nav class="navigation">
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="liste">
+        <li>
+          <a href="./main.html">Accueil</a>
+        </li>
+        <li class="dropdown-list">
+					<a>Circuit</a>
+					<ul class="dropdown-content">
+						<a class="circuit-link" href="../main/moramora.html">Mora Mora Vazaha</a>
+						<a class="circuit-link" href="../main/madagascar.html"> Madagascar Au coeur des Homme</a>
+						<a class="circuit-link" href="../main/tsingy.html">Tsiribihina et Tsingy</a>
+						<a class="circuit-link" href="../main/diam_bazaha.html">Diam-bazaha</a>
+						<a class="circuit-link" href="../main/escapade.html">Escapades exotiques</a>
+						<a class="circuit-link" href="../main/terre.html">Terre de légende</a>
+						<a class="circuit-link" href="../main/baobab.html"> Baobab</a>
+						<a class="circuit-link" href="../main/voleur_zebu.html">Voleur de Zébu</a>
+					</ul>
+        </li>
+        <li>
+          <a href="" class="switch"></a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <li>
+          <a href="./main.html">Accueil</a>
+        </li>
+        <li>
+					<a class="dropdown-hamburger" >Circuit</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </div>
+			<ul class="dropdown-content-hamburger">
+				<li><a class="circuit-link" href="../main/moramora.html">Mora Mora Vazaha</a></li>
+				<li><a class="circuit-link" href="../main/madagascar.html"> Madagascar Au coeur des Homme</a><li>
+				<li><a class="circuit-link" href="../main/tsingy.html">Tsiribihina et Tsingy</a><li>
+				<li><a class="circuit-link" href="../main/diam_bazaha.html">Diam-bazaha</a></li>
+				<li><a class="circuit-link" href="../main/escapade.html">Escapades exotiques</a></li>
+				<li><a class="circuit-link" href="../main/terre.html">Terre de légende</a></li>
+				<li><a class="circuit-link" href="../main/baobab.html"> Baobab</a></li>
+				<li><a class="circuit-link" href="../main/voleur_zebu.html">Voleur de Zébu</a></li>
+			</ul>
+    </nav>
+  </header>
+  <div style="width: 100%; height: 100px;">
+  </div>
+  <main id="devis">
+    <section class="devis hidden">
+      <form action="">
+        <div class="grids">
+          <h3 class="titre">Nombre de participants</h3>
+          <div>
+            <div>
+              <input type="number" name="adult" id="adult">
+              <label for="adult">Adults</label>
+            </div>
+            <div class="label">
+              <input type="number" name="dix" id="dix">
+              <label for="dix">Moins de 10 ans</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3 class="titre" style="margin-bottom: 50px;">Avez-vous déjà réservé de vol?</h3>
+            <div class="grids">
+              <label for="dateArrive"> Si oui, Date d'arrivée approximative</label>
+              <input type="date" name="dateArrive" id="dateArrive" required>
+            </div>
+          </div>
+        </div>
+        <div class="grids">
+          <h3>Budget approximatif par personne</h3>
+          <div>
+            <input type="text" name="budget" id="budget" placeholder="0$" required>
+            <label>USD (Hors vols de départ et de retour)</label>
+          </div>
+        </div>
+        <hr>
+        <h2>Sur place</h2>
+        <div class="checking">
+          <h3>Quelle(s) partie(s) du pays voulez-vous visiter ?</h3>
+          <div>
+            <input type="checkbox" required class="partie" name="nord" id="nord" value="NORD">
+            <label for="nord">NORD</label>
+          </div>
+          <div>
+            <input type="checkbox" required class="partie" name="sud" id="sud" value="SUD">
+            <label for="sud">SUD</label>
+          </div>
+          <div>
+            <input type="checkbox" required class="partie" name="est" id="est"  value="EST">
+            <label for="est">EST</label>
+          </div>
+          <div>
+            <input type="checkbox" required class="partie" name="ouest" id="ouest"  value="OUEST">
+            <label for="ouest">OUEST</label>
+          </div>
+        </div>
+        
+        <div class="checking">
+          <h3>Quel(s) style(s) d'hébergement souhaitez-vous ?</h3>
+          <div>
+            <input type="checkbox" class="hebergement" required id="habitant" value="Chez l'habitant">
+            <label for="habitant">Chez l’habitant et standard (10 à 25€/chambre/nuit)</label>
+          </div>
+          <div>
+            <input type="checkbox" class="hebergement" required id="deux" value="Mid range">
+            <label for="deux">Mid Range (30 ~ 50 EUR/chambre/nuit)</label>
+          </div>
+          <div>
+            <input type="checkbox" class="hebergement" required id="ecoSuperieur" value="Eco superieur">
+            <label for="ecoSuperieur">Eco Supérieur/Charme (50 ~ 80 EUR /chambre/nuit)</label>
+          </div>
+          <div>
+            <input type="checkbox" class="hebergement" required id="superieur" value="Superieur">
+            <label for="superieur">Supérieure (90 ~ 130 EUR/chambre/nuit)</label>
+          </div>
+          <div>
+            <input type="checkbox" class="hebergement" required id="chic" value="Chic et charme">
+            <label for="chic">Chic & Charme (130 ~ 500 EUR /chambre/nuit)</label>
+          </div>
+        </div>
+        
+        <div class="checking">
+          <h3>Concernant les repas, voulez-vous que l'agence vous propose: </h3>
+          <div>
+            <input type="checkbox" required name="petit" id="petit" class="repas" value="Petit-dejeuner (compris avec l'hébergement)">
+            <label for="petit">Petit-déjeuner (compris avec l'hébergement)</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="demi" id="demi" class="repas" value="Déjeuners ou dîners (en demi-pession)">
+            <label for="demi">Déjeuners ou dîners (en demi-pession)</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="pension" id="pension" class="repas" value="Déjeuners + Dîners (en Pension complète)">
+            <label for="pension">Déjeuners + Dîners (en Pension complète)</label>
+          </div>
+        </div>
+
+        <div class="checking">
+          <h3>Vos envies de voyage : </h3>
+          <div>
+            <input type="checkbox" required name="decouverte" class="envies" value="Découverte des incontournables">
+            <label for="petit">Découverte des incontournables</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="exp" class="envies" value="Expérience Solidaire">
+            <label for="exp">Expérience Solidaire</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="rand" class="envies" value="Randonnées et treks">
+            <label for="rand">Randonnées et treks</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="adrenaline" class="envies" value="Adrénaline (escalade, parapente)">
+            <label for="adrenaline">Adrénaline (escalade, parapente)</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="multi" class="envies" value="Voyage multi activité (VTT, rando, Pirogue, Plongé, kite, surf, wind surf...)">
+            <label for="multi">Voyage multi activité (VTT, rando, Pirogue, Plongé, kite, surf, wind surf...)</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="sun" class="envies" value="Sun and Sea">
+            <label for="sun">Sun and Sea</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="decul" class="envies" value="Découvertes culturelles">
+            <label for="decul">Découvertes culturelles</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="croisiere" class="envies" value="Croisière (safari plongé ou safari pêche)">
+            <label for="croisiere">Croisière (safari plongé ou safari pêche)</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="birdwatching" class="envies" value="Birdwatching">
+            <label for="birdwatching">Birdwatching</label>
+          </div>
+          <div>
+            <input type="checkbox" required name="auto" class="envies" value="Auto tour en 4x4">
+            <label for="auto">Auto tour en 4x4</label>
+          </div>
+        </div>
+
+        <div>
+          <h2>Où en êtes-vous dans ce projet ?</h2>
+          <p>Besoin d'informations pour me décider dans le choix de ma destination
+            Destination choisie, je commence à organiser mon voyage
+           </p>
+           <h2>Décrivez-nous votre voyage idéal: </h2>
+           <textarea name="description" id="description" cols="50" rows="10" required ></textarea>
+           <p class="exemple">Ex : Le budget estimé par personne (hors vols internationaux), les étapes, les activités souhaitées, vos interrogations sur ce voyage..., ce que vous aimez, ce que vous n'aimez pas…et vos remarques (répartition des chambres, régime alimentaire, souhaits particuliers…) </p>
+        </div>
+        <div>
+          <h2>RENDEZ-VOUS TELEPHONIQUE</h2>
+          <div class="email-informations">
+            <div class="apropos nom">
+              <label for="nom">Nom et Prénom</label>
+              <div>
+                <input type="text" style="width: 70%;  padding: 20px; text-align: left;font-size: 1.1rem;" name="nom" id="nom" required>
+              </div>
+            </div>
+            <div class="apropos nationalite">
+              <label for="nation">Nationalité</label>
+              <input type="text" style="width: 70%;  padding: 20px; text-align: left;font-size: 1.03rem;" name="nation" id="nation" required>
+            </div>
+            <div class="apropos info-num">
+              <label for="numero">Numéro de téléphone(whatsapp si possible)</label>
+              <input type="text" style="width: 70%;  padding: 20px; text-align: left;font-size: 1.03rem;" name="numero" id="numero" required>
+            </div>
+            <div class="apropos date-appel">
+              <label for="appel">Date pour appel</label>
+              <input type="date" style="font-size: 1.03rem;" name="appel" id="appel" required>
+            </div>
+            <div class="apropos heure-appel">
+              <label for="heure">Tranche horaire(Heure locale)</label>
+              <input type="time" style="font-size: 1.03rem;width: 70%; padding: 20px;" name="heure" id="heure" required>
+            </div>
+            <div class="apropos email">
+              <label for="mail">Adresse E-mail</label>
+              <input style="width: 70%; padding: 20px;font-size: 1.03rem;" type="mail" name="mail" id="mail" required>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button name="emailSubmit" class="buttonMailer">Envoyer</button>
+        </div>
+      </form>
+    </section>
+    <footer class="trek--footer hidden" id="contact">
+      <div class="about--trek">
+        <div class="name">
+          <span>SUD</span>MADATREK
+        </div>
+        <div class="grid-about">
+          <div>
+            <p>Lot D02/3601 ampasambazaha 301 Fianarantsoa, Madagascar</p>
+          </div>
+          <div>
+            <p>+261 34 60 116 95</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="trek--background">
+      </div> -->
+    </footer>
+    <div class="copyright">
+      <p class="trek--copyright">&copy; SudMadaTrek </p>
+    </div>
+  </main>
+	<script src="../js/observer.js"></script>
+	<script src="../js/email.js"></script>
+</body>
+</html>

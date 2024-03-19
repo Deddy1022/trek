@@ -1,0 +1,247 @@
+.contenu {
+  margin: 0 auto;
+  width: 90%;
+  background-color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+.grid .entry {
+  padding: 30px;
+  height: auto;
+  text-align: center;
+  background-color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+}
+
+.fa-solid {
+  color: white;
+}
+
+.entry > * {
+  margin-bottom: 10px;
+}
+
+.entry .img img {
+  width: 50px;
+}
+
+.main {
+  margin: 30px auto;
+  width: 90%;
+  background: hsl(0, 0%, 100%);
+  /* border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .5); */
+}
+
+.main .flex {
+  display: flex;
+  flex-direction: row;
+  row-gap: 50px;
+  column-gap: 50px;
+  position: relative;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* text-align: center; */
+}
+
+.main .flex p {
+  padding: 10px;
+}
+
+.table {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(192, 192, 192, 0.4);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 4px;
+}
+
+thead {
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+hr {
+  color: hsla(0, 0%, 85%, 0.5);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .flex .flex-entry {
+  flex-basis: 30%;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: all .3s;
+  background-color: #fff;
+}
+
+/* .main .flex:hover .flex-entry:not(:hover) {
+  filter: blur(.5rem)
+} */
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+.flex-entry:hover {
+  /* outline: 7px solid rgba(31, 229, 255, 0.1); */
+  transform: scale(1.05);
+}
+
+.main .flex .flex-entry a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.container .img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.description h2{
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: rgb(230, 104, 0);
+}
+
+.container span {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: .7rem;
+  background: rgb(35, 134, 10);
+  padding: 2px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.container h2{
+  position: absolute;
+  font-size: 1.1em;
+  bottom: 10px;
+  left: 15px;
+  color: rgb(255, 238, 238);
+}
+
+.counter {
+  font-size: 1.6rem;
+}
+
+.slideButton {
+  background: rgba(226, 226, 226, 0.299);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5rem;
+  color: rgba(55, 55, 55, 0.474);
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.slideButton:active {
+  background-color: rgb(96, 96, 96);
+  color: #fff;
+}
+
+.prev {
+  left: 20px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.previous {
+  left: 20px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.next {
+  right: -30px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.nexter {
+  right: -30px;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.titres {
+  font-size: 30px;
+  color: orangered;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.titre-circuit {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section-image {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  border-left: 5px solid rgb(22, 171, 212);
+  row-gap: 20px;
+  background-image: linear-gradient(176deg, orangered 70%, #ffffff calc(70% + 2px));
+  color: white;
+}
+
+.section-image img {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(192, 192, 192, 0.4);
+  filter: blur(.01rem);
+}
