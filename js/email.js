@@ -40,7 +40,7 @@ document.querySelector('.buttonMailer').addEventListener('click', (e) => {
   let params = {
     senderName: document.querySelector('#nom').value,
     nationalite: document.querySelector('#nation').value,
-    to: "raharisolofodeddy66@gmail.com",
+    to: "contact@sudmadatrek-voyages.com",
     replyTo: document.querySelector('#mail').value,
     message: document.querySelector('#description').value,
     subject: 'Devis personnalisé',
