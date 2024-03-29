@@ -110,7 +110,7 @@ p {
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
   min-height: 400px;
-  max-height: 600px;
+  max-height: 650px;
   height: 40%;
 }
 
@@ -204,6 +204,7 @@ hr {
 #details .carte {
   position: relative;
   height: 700px;
+  overflow: hidden;
 }
 
 .details .conditions {
@@ -219,8 +220,8 @@ hr {
   border-top-right-radius: 20px; */
   border: .7px solid rgba(0, 0, 0, .2);
   padding: 20px;overflow: hidden;
-  background-color: rgb(6, 90, 6);
-  color: white;
+  background-color: /*rgb(6, 90, 6)*/ rgb(0, 255, 179);
+  color: #222;
 }
 
 
@@ -228,7 +229,7 @@ hr {
   /* filter: blur(0); */
   width: 100%;
   display: block;
-  background-color: #222;
+  background-color: rgb(0, 20, 94);
   color: aliceblue;
   font-size: 15px;
   bottom: 10px;
@@ -288,7 +289,7 @@ hr {
 }
 
 .about--trek .name span {
-  color: rgb(0, 181, 181);
+  color: rgb(0, 101, 101);
   font-size: 1.3em;
 }
 
@@ -316,14 +317,27 @@ hr {
 }
 
 #details .carte .img {
-  width: 500px;
+  width: 400px;
   object-fit: cover;
   height: 600px;
   position: sticky;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   top: calc( 50% - 250px);
-  left: calc(50% - 150px)
+  left: calc(50% - 150px);
+  position: relative;
+  display: block;
+  margin: 50px 0;
+  animation: slide_animation 20s infinite alternate;
+}
+
+@keyframes slide_animation {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: -3700px;
+  }
 }
 
 #details .carte .modalActivate {

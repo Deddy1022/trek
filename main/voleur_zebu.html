@@ -24,7 +24,7 @@
       </div>
       <ul class="liste">
         <li>
-          <a href="./main.html">Accueil</a>
+          <a href="./index.html">Accueil</a>
         </li>
 				<li>
           <a href="devis.html">Devis</a>
@@ -49,7 +49,7 @@
 
       <div class="dropdown-menu">
         <li>
-          <a href="./main.html">Accueil</a>
+          <a href="/">Accueil</a>
         </li>
         <li>
 					<a class="dropdown-hamburger" >Circuit</a>
@@ -96,7 +96,7 @@
 				<h1>SUR LES TRACES DES VOLEURS DE ZEBU</h1>
 	
 				<div class="description">
-					<p class="apropos">
+					<p>
 						Si la plupart du temps les voyageurs partent plutôt pour la descente de la tsiribihina et les tsingy, nous on vous offre une alternative qui sort des sentiers battus.
             Une aventure unique, qui vous emmènera à la découverte d’un Madagascar autrement et surtout différemment. Loin derrière la civilisation, là où la nature et l homme vivent en harmonie totale. Madagascar côté rurale et naturel.
             C’est un circuit sportif, qui vous fera découvrir les plus beaux sites et incontournables de la grande île.
@@ -208,6 +208,10 @@
 		<div class="hidden" id="details">
 			<div class="carte">
 				<img class="img" src="../images/voleur_zebu.png" alt="carte baobab">
+				<img class="img" src="../images/madagascar/tana.jpg" alt="Image 1">
+				<img class="img" src="../images/bemaraha/tsingy.JPG" alt="Image 2">
+				<img class="img" src="../images/bemaraha/tsingy_2..JPG" alt="Image 3">
+				<img class="img" src="../images/bemaraha/tsingy_3.JPG" alt="Image 3">
         <div class="modalActivate modalTrigger"><a type="button" id="modalTrigger"><img src="../ion_icons/map-outline.svg" alt="" class="icone"> Voir la carte</a></div>
 			</div>
 			<div class="container py-5" id="right">
@@ -266,7 +270,19 @@
 			</div>
 		</div>
 	</main>
+	<div class="bg-modal">
+		<div class="informations" id="modalCondition">
+			<div class="close closed">
+				<img src="../ion_icons/close-circle-outline.svg" alt="" class="icone">
+			</div>
+		</div>
+	</div>
 
+	<div class="btn btn--conditions hidden" style="display: none;">
+		<h1 style="margin-bottom: 40px; font-size: 2.7rem;">MORE INFORMATIONS</h1>
+		<button type="button" class="condition-modal"><i class="fa fa-book"></i></button> 
+		<span>Please, read these lines carefully. Thank You</span>
+	</div>
   <div class="bg-modal">
     <div class="modal" id="modal">
       <div class="close">
@@ -277,27 +293,14 @@
   </div>
     
 	<footer class="trek--footer hidden" id="contact">
-    <div class="about--trek">
-      <div class="name">
-        <span>SUD</span>MADATREK
-      </div>
-      <div class="grid-about">
-        <div>
-          <p>Lot D02/3601 ampasambazaha 301 Fianarantsoa, Madagascar</p>
-        </div>
-        <div>
-          <p>+261 34 60 116 95</p>
-        </div>
-      </div>
-    </div>
-		<!-- <div class="trek--background">
-		</div> -->
+		
 	</footer>
   <div class="copyright">
     <p class="trek--copyright">&copy; SudMadaTrek </p>
   </div>
 	<script src="../js/voleur_zebu.js"></script>
 	<script src="../js/observer.js"></script>
+	<script src="../js/footer.js"></script>
 	<script src="../js/modal.js"></script>
 </body>
 </html>

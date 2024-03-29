@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x_icon" href="../images/icon_sud.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/side.css">
+  <!-- <link rel="stylesheet" href="../styles/side.css"> -->
+  <link rel="stylesheet" href="../styles/mediaQueries.css">
+  <link rel="stylesheet" href="../fontawesome/css/all.css">
+  <title>Voyage avec Sudmadatrek</title>
+</head>
+<body onload="charge()">
+  <script src="../js/lang.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <header>
+    <div id="logo">
+      <img src="../images/logo.png" alt="Logo Sudmadatrek">
+    </div>
+    <nav class="navigation">
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="liste">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#main">Activités</a>
+        </li>
+        <li>
+          <a href="" class="switch"></a>
+        </li>
+        <li>
+          <a href="#condition">conditions</a>
+        </li>
+        <li>
+          <a href="devis.html">Devis</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="dropdown-menu">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="#main">Activités</a>
+        </li>
+        <li>
+          <a href="" class="switch"></a>
+        </li>
+        <li>
+          <a href="devis.html">Devis</a>
+        </li>
+        <li>
+          <a href="#condition">conditions</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="headerSud hidden">
+    <div class="bienvenue">
+      EXPLORER MADAGASCAR AVEC SUDMADATREK
+    </div>
+    <img src="../images/logo.png" class="logo-header" alt="Logo Sudmadatrek">
+  </div>
+  
+  <hr>
+  <main>
+    <div class="contenu french hidden">
+      <div class="grid"></div>
+    </div>
+    <hr>
+  
+    <div class="main hidden" id="main">
+      <div class="description">
+        <h2><span class="counter"></span></h2>
+      </div>
+      <div class="flex" id="flex">
+        <button type="button" class="slideButton prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button type="button" class="slideButton next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <hr>
+	</main>
+
+  <div class="bg-modalMain">
+		<div class="informations" id="modalCondition">
+      <div class="closed">
+				<img src="../ion_icons/close-circle-outline.svg" alt="button close" class="icone">
+			</div>
+			<div class="contain"></div>
+			<div class="modal-footer btn--close">
+				<button class="dismiss" type="button">Close</button>
+			</div>
+		</div>
+	</div>
+  <div class="titres">Nos tarifs pour locations de Voitures avec Chauffeur guide</div>
+  <div class="hidden table">
+    <table>
+      <thead>
+        <th>
+          type
+        </th>
+        <th>
+          tarifs
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Voiture légère pour 04 personnes(route goudronnée)</td>
+          <td>35 €</td>
+        </tr>
+        <tr>
+          <td>Van ou mini bus pour 07 personne par jour(route goudronnée)</td>
+          <td>50 €</td>
+        </tr>
+        <tr>
+          <td>Véhicule 4x4 pour 4 personnes(route goudronnée)</td>
+          <td>50 €</td>
+        </tr>
+        <tr>
+          <td>Véhicule 4x4 pour 4 personnes(piste)</td>
+          <td>70 €</td>
+        </tr>
+        <tr>
+          <td>Bus pour 12 personnes(route goudronnée)</td>
+          <td>100 €</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <div class="section-image hidden">
+    <div class="texte"></div>
+    <video loop controls autoplay>
+      <source src="../video_drone.mp4" type="video/mp4" >
+    </video>
+  </div>
+
+  <hr>
+
+  <div class="btn btn--conditions hidden" id="condition">
+    <button type="button" onclick="window.open('./CONTRAT.pdf')"><i class="fa fa-book"></i></button> 
+  </div>
+
+  <hr>
+	
+	<footer class="trek--footer hidden" id="contact">
+    
+	</footer>
+  <div class="copyright">
+    <p class="trek--copyright">&copy; SudMadaTrek </p>
+  </div>
+
+  <script src="../js/footer.js"></script>
+  <script src="../js/observer.js"></script>
+</body>
+</html>

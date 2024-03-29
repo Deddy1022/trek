@@ -24,7 +24,7 @@
       </div>
       <ul class="liste">
         <li>
-          <a href="./main.html">Accueil</a>
+          <a href="/">Accueil</a>
         </li>
         <li class="dropdown-list">
 					<a>Circuit</a>
@@ -52,7 +52,7 @@
 
       <div class="dropdown-menu">
         <li>
-          <a href="./main.html">Accueil</a>
+          <a href="/">Accueil</a>
         </li>
         <li>
 					<a class="dropdown-hamburger" >Circuit</a>
@@ -104,7 +104,7 @@
 				<h1>ESCAPADES EXOTIQUES</h1>
 	
 				<div class="description">
-					<p class="apropos">
+					<p>
 						Ici à Madagascar, le temps est connu pour être relatif. La devise  “mora-mora” en témoigne bien. 
             Le circuit « Escapades exotiques » est un voyage à votre rythme, pour découvrir les plus belles réserves naturelles de la grande île et le monde des épices malgaches au nord de Madagascar. Un voyage inoubliable à faire en couple, en famille ou entre amis
 					</p>
@@ -208,7 +208,12 @@
 
 		<div id="details">
 			<div class="carte">
-				<img class="img" src="../images/escapade.png" alt="carte baobab">
+				<img class="img" src="../images/escapade.png" alt="Escapade Exotique">
+				<img class="img" src="../images/isalo/parc_isalo.jpg" alt="Image 1">
+				<img class="img" src="../images/madagascar/tsaranoro.jpg" alt="Image 2">
+				<img class="img" src="../images/madagascar/andringitra.png" alt="Image 3">
+				<img class="img" src="../images/madagascar/ranohira_piscine.png" alt="Image 1">
+				<img class="img" src="../images/madagascar/ifaty.jpg" alt="Image 1">
         <div class="modalActivate modalTrigger"><a type="button" id="modalTrigger"><img src="../ion_icons/map-outline.svg" alt="" class="icone"> Voir la carte</a></div>
 			</div>
 			<div class="container py-5" id="right">
@@ -222,35 +227,47 @@
 				</div>
 			</div>
 		</div>
+		<hr>
 
-    <article class="informations">
-      <h2>INFORMATIONS SUPPLEMENTAIRES</h2>
-      <div>
-        <h3 class="conditions">Conditions</h3>
-        <p>
-          <img class="icone" src="../images/svg/send-outline.svg"> 
-          Le prix indiqué s’entend par personne,
-          pour un forfait séjour de 18 jours / 17 nuits. Programme non contractuel qui peut être modifié à tout moment        
-        </p>
-      </div>
-      <div>
-        <h3 class="conditions">Prestations incluses</h3>
-        <p>
-          <img class="icone" src="../images/svg/send-outline.svg"> Circuit de 18 jours / 17 nuits, en formule demi pension par personne. 
-          Hébergement sur la base d’une chambre double ou twin, Les transferts aéroports / hôtels / aéroports. 
-          Les visites et excursions mentionnées au programme, en voiture privé avec la présence d’un guide Local parlant français.
-        </p>
-      </div>
-      <div>
-        <h3 class="conditions">Prestations non incluses</h3>
-        <p>
-          <img class="icone" src="../images/svg/send-outline.svg"> Les vols. Les repas libres. Le supplément chambre individuelle (350 €). 
-          Sacs de couchage, Toutes les boissons. 
-          Les extra et autres dépenses que celles proposées par la formule. 
-          Les frais personnels Les pourboires. Les assurances annulation, assistance et rapatriement 
-        </p>
-      </div>
-    </article>
+		<div class="btn btn--conditions c--french hidden">
+			<h1 style="margin-bottom: 40px; font-size: 2.7rem;">INFORMATIONS SUPPLEMENTAIRES</h1>
+			<button type="button"><i class="fa fa-book"></i></button> 
+			<span>Veuillez lire attentivement s'il vous plaît!</span>
+		</div>
+
+		<hr>
+		<div class="bg-modal bg-french">
+			<div class="informations" id="modalConditionFrench">
+				<div class="close closed">
+					<img src="../ion_icons/close-circle-outline.svg" alt="" class="icone">
+				</div>
+				<div>
+					<h3 class="conditions">Conditions</h3>
+					<p>
+						<img class="icone" src="../images/svg/send-outline.svg"> 
+						Le prix indiqué s’entend par personne,
+						pour un forfait séjour de 18 jours / 17 nuits. Programme non contractuel qui peut être modifié à tout moment        
+					</p>
+				</div>
+				<div>
+					<h3 class="conditions">Prestations incluses</h3>
+					<p>
+						<img class="icone" src="../images/svg/send-outline.svg"> Circuit de 18 jours / 17 nuits, en formule demi pension par personne. 
+						Hébergement sur la base d’une chambre double ou twin, Les transferts aéroports / hôtels / aéroports. 
+						Les visites et excursions mentionnées au programme, en voiture privé avec la présence d’un guide Local parlant français.
+					</p>
+				</div>
+				<div>
+					<h3 class="conditions">Prestations non incluses</h3>
+					<p>
+						<img class="icone" src="../images/svg/send-outline.svg"> Les vols. Les repas libres. Le supplément chambre individuelle (350 €). 
+						Sacs de couchage, Toutes les boissons. 
+						Les extra et autres dépenses que celles proposées par la formule. 
+						Les frais personnels Les pourboires. Les assurances annulation, assistance et rapatriement 
+					</p>
+				</div>
+			</div>
+		</div>
 	</main>
 
 	<main class="english">
@@ -259,7 +276,7 @@
 				<h1>EXOTICS ESCAPADES</h1>
 	
 				<div class="description">
-					<p class="apropos">
+					<p>
 						Here in Madagascar, time is known to be relative. The saying “mora mora” is the perfect proof that everything can wait. 
             This circuit is an adventure at your pace, to discover the most preserved natural reserves of the Big Island. 
             You’ll also visit the north of Madagascar and its exquisite spices. 
@@ -365,8 +382,13 @@
 
 		<div id="details">
 			<div class="carte">
-				<img class="img" src="../images/escapade.png" alt="carte baobab">
-        <div class="modalActivatemodalTrigger"><a type="button" id="modalTrigger"><img src="../ion_icons/map-outline.svg" alt="" class="icone"> Show the map</a></div>
+				<img class="img" src="../images/escapade.png" alt="Escapade exotic">
+				<img class="img" src="../images/isalo/parc_isalo.jpg" alt="Isalo">
+				<img class="img" src="../images/madagascar/tsaranoro.jpg" alt="Tsaranoro">
+				<img class="img" src="../images/madagascar/andringitra.png" alt="Andringitra">
+				<img class="img" src="../images/madagascar/ranohira_piscine.png" alt="Ranohira">
+				<img class="img" src="../images/madagascar/ifaty.jpg" alt="Ifaty">
+        <div class="modalActivate modalTrigger"><a type="button" id="modalTrigger"><img src="../ion_icons/map-outline.svg" alt="" class="icone"> Show the map</a></div>
 			</div>
 			<div class="container py-5" id="right">
 				<div class="row">
@@ -498,27 +520,14 @@
   </div>
     
 	<footer class="trek--footer hidden" id="contact">
-    <div class="about--trek">
-      <div class="name">
-        <span>SUD</span>MADATREK
-      </div>
-      <div class="grid-about">
-        <div>
-          <p>Lot D02/3601 ampasambazaha 301 Fianarantsoa, Madagascar</p>
-        </div>
-        <div>
-          <p>+261 34 60 116 95</p>
-        </div>
-      </div>
-    </div>
-		<!-- <div class="trek--background">
-		</div> -->
+		
 	</footer>
   <div class="copyright">
     <p class="trek--copyright">&copy; SudMadaTrek </p>
   </div>
 	<script src="../js/escapade.js"></script>
 	<script src="../js/observer.js"></script>
+	<script src="../js/footer.js"></script>
 	<script src="../js/modal.js"></script>
 </body>
 </html>

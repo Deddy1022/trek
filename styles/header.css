@@ -306,3 +306,7 @@ button {
 .dropdown-content-hamburger li a {
     text-decoration: none;
 }
+
+.logo {
+    width: 50px;
+}
